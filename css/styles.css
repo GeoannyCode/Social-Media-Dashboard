@@ -131,12 +131,12 @@ h1{
 }
 
 .overview{
-    border: 1px solid pink;
+
     margin-bottom: 500px;
 }
 
 .card-small{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 1em;
@@ -150,25 +150,46 @@ h1{
 }
 
 .card-small-views{
-    border: 1px solid green;
+    /*border: 1px solid green;*/
+    color: var(--gray);
+    font-weight: bold;
+    font-size: .9em;
 }
 
 .card-small-icon{
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     text-align: right;
 }
 
 .card-small-number{
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
     font-weight: bold;
     font-size: 2.5em;
+    line-height: .9;
 }
 
 .card-small-percentage{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     text-align: right;
     display: flex;
     align-items: flex-end;
+    color: var(--lime-green);
+    justify-content: flex-end;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.card-small-percentage.is-danger{
     color: var(--bright-red);
+}
+
+.card-small-percentage span {
+    display: flex;
+    align-items: center;
+
+}
+
+.card-small-percentage img {
+    margin-right: 5px;
 }
 
